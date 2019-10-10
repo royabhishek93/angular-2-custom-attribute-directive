@@ -1,0 +1,9 @@
+<div>
+  <select [(ngModel)] ="myColor">
+    <option value='' selected> Select Color </option>
+    <option *ngFor = "let color of colors" [value] = "color">
+		{{color}}
+    </option>
+  </select>
+<p [dynamicColor]="myColor" defaultValue="red"> dynamicColor Directive Demo</p>
+</div> 
